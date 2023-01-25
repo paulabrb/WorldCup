@@ -2,10 +2,10 @@
 #include "TextureManager.hpp"
 // #include "Object.hpp"
 #include "Map.hpp"
-#include "ECS.hpp"
-// #include "Components.hpp"
-#include "PositionComponent.hpp"
-#include "SpriteComponent.hpp"
+// #include "ECS.hpp"
+#include "Components.hpp"
+// #include "PositionComponent.hpp"
+// #include "SpriteComponent.hpp"
 
 // Object* player;
 
@@ -62,7 +62,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		// newPlayer.getComponent<PositionComponent>().setPos(500,500);
 
 		//set start position
-		player.addComponent<PositionComponent>(100,500);
+		player.addComponent<PositionComponent>(0,0);
 		player.addComponent<SpriteComponent>("../assets/player.bmp");
 
 	}
@@ -105,7 +105,7 @@ void Game::update()
 	if(player.getComponent<PositionComponent>().x()>100)
 	{
 			//Modify with another texture 
-			player.getComponent<SpriteComponent>()setex("../assets/player.bmp");
+			player.getComponent<SpriteComponent>().setTex("../assets/player.bmp");
 	}
 
 }

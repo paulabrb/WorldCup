@@ -1,6 +1,5 @@
 #pragma once
-
-// #include "Components.hpp"
+#include "Components.hpp"
 
 class PositionComponent : public Component
 {

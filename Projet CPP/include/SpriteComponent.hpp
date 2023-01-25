@@ -1,6 +1,6 @@
 #pragma once
 
-// #include "Components.hpp"
+#include "Components.hpp"
 #include <SDL2/SDL.h>
 
 class SpriteComponent : public Component
@@ -14,12 +14,12 @@ class SpriteComponent : public Component
         SpriteComponent()=default;
         SpriteComponent(const char* path)
         {
-            setex(path);
+            SpriteComponent::setTex(path);
 
         }
 
 
-        void setex(const char* path)
+        void setTex(const char* path)
         {
             texture= TextureManager:: LoadTexture(path);
         }
