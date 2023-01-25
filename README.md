@@ -14,6 +14,7 @@ Download: https://cmake.org/download/
 Add Cmake dans le PATH:
 
 Windows
+
 Lors de l'intallation utiliser l'option pour modifier le system PATH environment variable ou sinon le faire manuellement en installant (e.g. C:\Program Files\CMake\bin) dans le PATH
 
 Mac OS
