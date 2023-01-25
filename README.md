@@ -20,7 +20,7 @@ Lors de l'intallation utiliser l'option pour modifier les variables  environment
 Mac OS
 1. Copier CMake.app dans Applications
 2. Lancer CMake.app
-3. Aller sur l'onglet "Tools/How to Install For Command Line Use” et suivre les instructions pour rendre disponbles les outils des lignes de commandes dans le PATH
+3. Dans l'onglet "Tools/How to Install For Command Line Use” suivre les instructions pour rendre disponbles les outils des lignes de commandes dans le PATH
 
 ```sh
 PATH="/Applications/CMake.app/Contents/bin":"$PATH"
@@ -48,7 +48,7 @@ make install
 
 ## Lancer le jeu
 
-Dans `\ProjetCPP\build>`:
+Dans `\ProjetCPP\build`:
 ```sh
 cmake ..
 make
@@ -57,10 +57,6 @@ Exécution:`
 ```sh
 ./Game
 ```
-
-
-
-
-
+Pour compiler à nouveau le jeu après modifications s'assurer d'avoir supprimé dans `\ProjetCPP\build` l'exécutable `Game`, le fichier `CMakeCache.txt` et le dossier `CMakeFiles`
 
 
