@@ -1,6 +1,6 @@
 #pragma once
 #include "ECS.hpp"
-#include "PosComponents.hpp"
+#include "PositionComponent.hpp"
 #include "SpriteComponent.hpp"
 
 // class PositionComponent : public Component

@@ -4,7 +4,7 @@
 #include "Map.hpp"
 #include "ECS.hpp"
 // #include "Components.hpp"
-#include "PosComponents.hpp"
+#include "PositionComponent.hpp"
 #include "SpriteComponent.hpp"
 
 // Object* player;
