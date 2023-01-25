@@ -7,7 +7,7 @@
 
 
 ### Installation de CMake
-https://cmake.org/install/
+Se référer dans: https://cmake.org/install/
 
 Download: https://cmake.org/download/
 
@@ -45,6 +45,21 @@ cmake .
 make      
 make install
 ```
+
+## Lancer le jeu
+
+Dans `\ProjetCPP\build>`:
+```sh
+cmake ..
+make
+```
+Exécution:`
+```sh
+./Game
+```
+
+
+
 
 
 
