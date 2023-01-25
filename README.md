@@ -1,7 +1,7 @@
 # WorldCup
 Description du projet
 
-# Installations
+## Installations
 
 # Installation de la librairie SDL2
 
