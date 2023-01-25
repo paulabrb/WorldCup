@@ -1,18 +1,20 @@
 #include "Game.hpp"
 #include "TextureManager.hpp"
-#include "Object.hpp"
+// #include "Object.hpp"
 #include "Map.hpp"
 #include "ECS.hpp"
-#include "Components.hpp"
+// #include "Components.hpp"
+#include "PosComponents.hpp"
+#include "SpriteComponent.hpp"
 
-Object* player;
+// Object* player;
 
 Map* map;
 
 SDL_Renderer* Game::renderer = nullptr;
 
 Manager manager;
-auto& newPlayer(manager.addEntity());
+auto& player(manager.addEntity());
 
 Game::Game()
 {}
@@ -53,12 +55,15 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		_running = true;
 		_count = 0;
 
-		player = new Object("../assets/player.bmp", 0, 0);
+		// player = new Object("../assets/player.bmp", 0, 0);
 		map = new Map();
-		newPlayer.addComponent<PositionComponent>();
-		//set new position
-		newPlayer.getComponent<PositionComponent>().setPos(500,500);
-	
+		// newPlayer.addComponent<PositionComponent>();
+		// //set new position
+		// newPlayer.getComponent<PositionComponent>().setPos(500,500);
+
+		//set start position
+		player.addComponent<PositionComponent>(100,500);
+		player.addComponent<SpriteComponent>("../assets/player.bmp");
 
 	}
 }
@@ -80,7 +85,7 @@ void Game::event()
 
 void Game::update()
 {
-	player->update();
+	player.update();
 	
 	// _count++;
 	// destR.h = 64;
@@ -90,17 +95,27 @@ void Game::update()
 	//std::cout << _count << std::endl;
 
 	// map->LoadMap();
-
+	manager.refresh();
 	manager.update();
-	std::cout<<newPlayer.getComponent<PositionComponent>().x()<<","<<
-		newPlayer.getComponent<PositionComponent>().y()<<std::endl;
+
+	// std::cout<<newPlayer.getComponent<PositionComponent>().x()<<","<<
+	// 	newPlayer.getComponent<PositionComponent>().y()<<std::endl;
+
+	//check player position
+	if(player.getComponent<PositionComponent>().x()>100)
+	{
+			//Modify with another texture 
+			player.getComponent<SpriteComponent>()setex("../assets/player.bmp");
+	}
+
 }
 
 void Game::render()
 {
 	SDL_RenderClear(renderer);
 	map->DrawMap();
-	player->render();
+	// player->render();
+	manager.draw();
 	SDL_RenderPresent(renderer);
 }
 

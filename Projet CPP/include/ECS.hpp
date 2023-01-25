@@ -59,9 +59,12 @@ class Entity
         {
             //for each component
             for(auto& comp : components)comp->update();
-            for(auto& comp :components)comp->draw();
+            // for(auto& comp :components)comp->draw();
         }
-        void draw() {}
+        void draw()
+        {
+            for(auto& comp :components)comp->draw();  
+        }
         bool isActive() const {return active; }
         //remove components from the Game
         void destroy() {active = false;}
