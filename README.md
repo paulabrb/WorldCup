@@ -1,13 +1,13 @@
 # WorldCup
 Description du projet
 
-Installations
+#Installations
 
-Installation de la librairie SDL2
+#Installation de la librairie SDL2
 
 
 
-Installation de CMake
+#Installation de CMake
 
 Windows
 Mac OS
