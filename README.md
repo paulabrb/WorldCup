@@ -9,7 +9,7 @@ DES WARNING CONCERNANT LA SDL PEUVENT APPARAITRE SOUS Mac OS
 (mais pas de warning sur Linux)
 
 Dans le fichier  `/apps/main.cpp`
-NE JAMAIS PASSER L'ARGUMENT `FULLSCREEN` À `True`  SUR Mac COS
+NE JAMAIS PASSER L'ARGUMENT `FULLSCREEN` À `True`  SUR Mac OS
 (si vous le faites, il faut faire `CMD+Q` pour quitter)
 
 ## Installations
