@@ -71,7 +71,7 @@ make install
 
 ## Lancer le jeu
 
-LE DOSSIER BUILD DOIT ÊTRE VIDE AVANT TOUTE MANIPULATION
+LE DOSSIER `build` DOIT ÊTRE VIDE AVANT TOUTE MANIPULATION
 
 Dans le répertoire `\ProjetCPP\build`lancer:
 ```sh
