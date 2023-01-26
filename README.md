@@ -1,9 +1,9 @@
 # WorldCup
 ## Description du jeu
 
-## Important
-
 Toutes les textures sont en 32x32 et on été desginées à l'aide de GIMP
+
+## Important
 
 DES WARNING CONCERNANT LA SDL PEUVENT APPARAITRE SOUS Mac OS
 (mais pas de warning sur Linux)
