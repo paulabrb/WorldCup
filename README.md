@@ -69,7 +69,7 @@ Dans le répertoire `\ProjetCPP\build`lancer:
 cmake ..
 make
 ```
-Exécution:`
+Exécution:
 ```sh
 ./Game
 ```
