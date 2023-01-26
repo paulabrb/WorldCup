@@ -1,5 +1,5 @@
 # WorldCup
-## Description du projet
+## Description du jeu
 
 Toutes les textures sont en 32x32 et on été desginées à l'aide de GIMP
 
