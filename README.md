@@ -3,6 +3,13 @@
 
 Toutes les textures sont en 32x32 et on été desginées à l'aide de GIMP
 
+DES WARNING CONCERNANT LA SDL PEUVENT APPARAITRE SOUS Mac OS
+(mais pas de warning sur linux)
+
+DANS LE FICHIER  `/apps/main.cpp`
+NE JAMAIS PASSER L'ARGUMENT FULLSCREEN À TRUE SUR MACOS
+(si vous le faites, il faut faire `CMD+Q` pour quitter)
+
 ## Installations
 
 ### Installation de la librairie SDL2
@@ -63,6 +70,8 @@ make install
 ```
 
 ## Lancer le jeu
+
+LE DOSSIER BUILD DOIT ÊTRE VIDE AVANT TOUTE MANIPULATION
 
 Dans le répertoire `\ProjetCPP\build`lancer:
 ```sh
