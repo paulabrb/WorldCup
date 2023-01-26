@@ -73,6 +73,6 @@ Exécution:
 ```sh
 ./Game
 ```
-Pour compiler à nouveau le jeu après modifications s'assurer d'avoir supprimé dans le répertoire `\ProjetCPP\build` l'exécutable `Game`, le fichier `CMakeCache.txt` et le dossier `CMakeFiles`
+Pour compiler à nouveau le jeu après modifications s'assurer d'avoir supprimé dans le répertoire `\ProjetCPP\build` l'exécutable `Game`, le `Makefile` , le fichier `CMakeCache.txt` et le dossier `CMakeFiles`
 
 
