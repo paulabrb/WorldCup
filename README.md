@@ -9,7 +9,7 @@ Toutes les textures sont en 32x32 et on été desginées à l'aide de GIMP
 
 L'interface graphique du jeu a été réalisé avec la librairie SDL2
 
-Pour l'installer sous:
+Pour l'installer sur:
 
 Mac OS sans Xcode
 
@@ -64,7 +64,7 @@ make install
 
 ## Lancer le jeu
 
-Dans le répéertoire `\ProjetCPP\build`lancer:
+Dans le répertoire `\ProjetCPP\build`lancer:
 ```sh
 cmake ..
 make
